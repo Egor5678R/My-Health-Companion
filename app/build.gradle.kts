@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.myhealthcompanion"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.myhealthcompanion"
@@ -66,4 +66,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.5.0")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.5.0")
+    implementation("mysql:mysql-connector-java:8.0.26")
 }
